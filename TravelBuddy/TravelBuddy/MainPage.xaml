@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TravelBuddy" x:Class="TravelBuddy.MainPage">
-    <Grid >
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="2*"/>
@@ -10,17 +10,11 @@
         <Label Text="Welcome to Newcastle airport" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
         <Button Text="Go to Gate"
                 Grid.Row="1"
-                TextColor="White"
-                BackgroundColor="Orange"
                 Clicked="OnGateButtonClicked"
-                AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Go to Gate"/>
         <Button Text="Socalise"
                 Grid.Row="2"
-                TextColor="White"
-                BackgroundColor="Orange"
                 Clicked="OnSocialButtonClicked"
-                AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="socialize"/>
     </Grid>
 </ContentPage>

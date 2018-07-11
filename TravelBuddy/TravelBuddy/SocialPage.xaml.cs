@@ -26,5 +26,10 @@ namespace TravelBuddy
         {
             await Navigation.PushModalAsync(new ToiletsPage());
         }
+
+        async void OnBackButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

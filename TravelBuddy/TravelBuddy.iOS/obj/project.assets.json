@@ -11,6 +11,15 @@
           "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
         }
       },
+      "Xam.Plugins.Vibrate/4.0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -139,6 +148,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xam.Plugins.TextToSpeech": "4.0.0.7",
+          "Xam.Plugins.Vibrate": "4.0.0.5",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -159,6 +169,15 @@
           "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
         }
       },
+      "Xam.Plugins.Vibrate/4.0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -287,6 +306,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xam.Plugins.TextToSpeech": "4.0.0.7",
+          "Xam.Plugins.Vibrate": "4.0.0.5",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -307,6 +327,15 @@
           "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
         }
       },
+      "Xam.Plugins.Vibrate/4.0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -435,6 +464,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xam.Plugins.TextToSpeech": "4.0.0.7",
+          "Xam.Plugins.Vibrate": "4.0.0.5",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -455,6 +485,15 @@
           "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
         }
       },
+      "Xam.Plugins.Vibrate/4.0.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.Vibrate.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -583,6 +622,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Xam.Plugins.TextToSpeech": "4.0.0.7",
+          "Xam.Plugins.Vibrate": "4.0.0.5",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -617,6 +657,26 @@
         "lib/xamarintvos10/Plugin.TextToSpeech.xml",
         "xam.plugins.texttospeech.4.0.0.7.nupkg.sha512",
         "xam.plugins.texttospeech.nuspec"
+      ]
+    },
+    "Xam.Plugins.Vibrate/4.0.0.5": {
+      "sha512": "N4VdnyKlSfGGhgLqtBWaBh8wEH0Vr0PJRZbIMenvc12410ZIrY8+bsz2NNN20iJdfo+hg4Wj/XnR/a/TKThTcw==",
+      "type": "package",
+      "path": "xam.plugins.vibrate/4.0.0.5",
+      "files": [
+        "lib/monoandroid60/Plugin.Vibrate.dll",
+        "lib/monoandroid60/Plugin.Vibrate.xml",
+        "lib/netstandard1.0/Plugin.Vibrate.dll",
+        "lib/netstandard1.0/Plugin.Vibrate.xml",
+        "lib/netstandard2.0/Plugin.Vibrate.dll",
+        "lib/netstandard2.0/Plugin.Vibrate.xml",
+        "lib/uap10.0.15063/Plugin.Vibrate.dll",
+        "lib/uap10.0.15063/Plugin.Vibrate.pri",
+        "lib/uap10.0.15063/Plugin.Vibrate.xml",
+        "lib/xamarinios10/Plugin.Vibrate.dll",
+        "lib/xamarinios10/Plugin.Vibrate.xml",
+        "xam.plugins.vibrate.4.0.0.5.nupkg.sha512",
+        "xam.plugins.vibrate.nuspec"
       ]
     },
     "Xamarin.Forms/3.0.0.446417": {
@@ -768,6 +828,7 @@
     "Xamarin.iOS,Version=v1.0": [
       "TravelBuddy >= 1.0.0",
       "Xam.Plugins.TextToSpeech >= 4.0.0.7",
+      "Xam.Plugins.Vibrate >= 4.0.0.5",
       "Xamarin.Forms >= 3.0.0.446417"
     ]
   },
@@ -817,6 +878,10 @@
           "Xam.Plugins.TextToSpeech": {
             "target": "Package",
             "version": "4.0.0.7"
+          },
+          "Xam.Plugins.Vibrate": {
+            "target": "Package",
+            "version": "4.0.0.5"
           }
         }
       }
