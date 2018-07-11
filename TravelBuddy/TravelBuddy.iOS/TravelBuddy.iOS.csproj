@@ -145,4 +145,9 @@
       <Name>TravelBuddy</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\location.png" />
+    <BundleResource Include="Resources\locationx2.png" />
+    <BundleResource Include="Resources\locationx3.png" />
+  </ItemGroup>
 </Project>

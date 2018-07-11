@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/GoToGate.xaml">
     <Files>
       <File FileName="TravelBuddy/MainPage.xaml.cs" Line="20" Column="1" />
       <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="32" Column="68" />
-      <File FileName="TravelBuddy/GoToGate.xaml" Line="5" Column="103" />
-      <File FileName="TravelBuddy/MainPage.xaml" Line="15" Column="45" />
+      <File FileName="TravelBuddy/MainPage.xaml" Line="25" Column="12" />
+      <File FileName="TravelBuddy/GoToGate.xaml" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

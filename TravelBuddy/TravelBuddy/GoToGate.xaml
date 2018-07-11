@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.GoToGate">
     <ContentPage.Content>  
-        <StackLayout Padding="0,20,0,20">
-        <Label Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
-        </StackLayout>
+        <Grid Padding="20" VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="128"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="location.png"></Image>
+        <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" FontSize="Large"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
