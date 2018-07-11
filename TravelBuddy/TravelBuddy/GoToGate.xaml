@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.GoToGate">
-    <ContentPage.Content>        
-        <Label Text="Welcome to Newcastle airport" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
+    <ContentPage.Content>  
+        <StackLayout Padding="0,20,0,20">
+        <Label Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
