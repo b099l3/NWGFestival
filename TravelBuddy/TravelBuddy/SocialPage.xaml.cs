@@ -11,5 +11,20 @@ namespace TravelBuddy
         {
             InitializeComponent();
         }
+
+        async void OnShopsButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SocialPage());
+        }
+
+        async void OnBarsButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SocialPage());
+        }
+
+        async void OnToiletsButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SocialPage());
+        }
     }
 }
