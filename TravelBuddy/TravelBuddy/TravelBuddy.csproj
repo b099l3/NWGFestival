@@ -34,5 +34,8 @@
     <Compile Update="ToiletsPage.xaml.cs">
       <DependentUpon>ToiletsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="SoloTravellerPage.xaml.cs">
+      <DependentUpon>SoloTravellerPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
