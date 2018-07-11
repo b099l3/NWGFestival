@@ -12,14 +12,14 @@
                 Grid.Row="1"
                 TextColor="White"
                 BackgroundColor="Orange"
-                Clicked="OnSocialButtonClicked"
+                Clicked="OnGateButtonClicked"
                 AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Go to Gate"/>
         <Button Text="Socalise"
                 Grid.Row="2"
                 TextColor="White"
                 BackgroundColor="Orange"
-                Clicked="OnGateButtonClicked"
+                Clicked="OnSocialButtonClicked"
                 AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="socialize"/>
     </Grid>

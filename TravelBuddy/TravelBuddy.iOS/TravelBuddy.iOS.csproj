@@ -134,6 +134,9 @@
     <PackageReference Include="Xam.Plugins.TextToSpeech">
       <Version>4.0.0.7</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugins.Vibrate">
+      <Version>4.0.0.5</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

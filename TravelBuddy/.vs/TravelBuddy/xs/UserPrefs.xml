@@ -1,44 +1,13 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SocialPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/MainPage.xaml">
     <Files>
-      <File FileName="TravelBuddy/MainPage.xaml" Line="24" Column="53" />
-      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="11" Column="10" />
-      <File FileName="TravelBuddy/SocialPage.xaml" Line="9" Column="40" />
-      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="17" Column="59" />
-      <File FileName="TravelBuddy.iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="TravelBuddy/GoToGate.xaml" Line="4" Column="131" />
-      <File FileName="TravelBuddy.iOS/Info.plist" />
-      <File FileName="TravelBuddy/ShopsPage.xaml" Line="6" Column="1" />
-      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TravelBuddy/BarsPage.xaml" Line="6" Column="1" />
-      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TravelBuddy/ToiletsPage.xaml" Line="6" Column="1" />
-      <File FileName="TravelBuddy/ToiletsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="32" Column="68" />
+      <File FileName="TravelBuddy/GoToGate.xaml" Line="5" Column="103" />
+      <File FileName="TravelBuddy/MainPage.xaml" Line="15" Column="45" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="TravelBuddy" expanded="True">
-            <Node name="TravelBuddy" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="BarsPage.xaml" expanded="True" />
-              <Node name="GoToGate.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
-              <Node name="ShopsPage.xaml" expanded="True" />
-              <Node name="SocialPage.xaml" expanded="True">
-                <Node name="SocialPage.xaml.cs" selected="True" />
-              </Node>
-              <Node name="ToiletsPage.xaml" expanded="True" />
-            </Node>
-            <Node name="TravelBuddy.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -50,6 +19,6 @@
     <Watch file="../../../../../Zonal/BurgerApplication/Mobile/Apps/Akru/shared/Services/PrinterService.cs" line="89" offsetX="590" offsetY="1320" expression="printer.PaperSize" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.905c34b7da6c79319b39febd7f9f960148e6808e" automaticSigning="False" />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.Nexus_6P_API_27" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C52B4533-F1D1-48B1-A662-7F6676E24626" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.SelectDevice" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>
