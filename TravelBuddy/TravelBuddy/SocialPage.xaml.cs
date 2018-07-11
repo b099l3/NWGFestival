@@ -14,17 +14,17 @@ namespace TravelBuddy
 
         async void OnShopsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SocialPage());
+            await Navigation.PushModalAsync(new ShopsPage());
         }
 
         async void OnBarsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SocialPage());
+            await Navigation.PushModalAsync(new BarsPage());
         }
 
         async void OnToiletsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SocialPage());
+            await Navigation.PushModalAsync(new ToiletsPage());
         }
     }
 }
