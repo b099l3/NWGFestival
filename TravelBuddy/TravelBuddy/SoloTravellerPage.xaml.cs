@@ -11,5 +11,10 @@ namespace TravelBuddy
         {
             InitializeComponent();
         }
+
+        async void OnConnectButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SoloTravellersConnectPage());
+        }
     }
 }

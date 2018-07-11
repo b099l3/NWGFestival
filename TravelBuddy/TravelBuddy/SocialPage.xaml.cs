@@ -31,5 +31,11 @@ namespace TravelBuddy
         {
             await Navigation.PopModalAsync();
         }
+
+        async void OnSoloTravellersButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SoloTravellerPage());
+        }
+
     }
 }

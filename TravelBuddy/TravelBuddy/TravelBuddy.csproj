@@ -37,5 +37,8 @@
     <Compile Update="SoloTravellerPage.xaml.cs">
       <DependentUpon>SoloTravellerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="SoloTravellersConnectPage.xaml.cs">
+      <DependentUpon>SoloTravellersConnectPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
