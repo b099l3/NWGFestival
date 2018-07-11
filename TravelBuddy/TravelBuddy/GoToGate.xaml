@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.GoToGatePage">
-    <ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.GoToGate">
+    <ContentPage.Content>        
         <Label Text="Welcome to Newcastle airport" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
     </ContentPage.Content>
 </ContentPage>

@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TravelBuddy" x:Class="TravelBuddy.MainPage">
-    <StackLayout>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <!-- Place new controls here -->
         <Label Text="Welcome to Newcastle airport" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large"/>
         <Button Text="Go to Gate"
+                Grid.Row="1"
+                TextColor="White"
+                BackgroundColor="Maroon"
                 Clicked="OnSocialButtonClicked"
                 AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Go to Gate"/>
         <Button Text="Socialise"
+                Grid.Row="2"
+                TextColor="White"
+                BackgroundColor="Maroon"
                 Clicked="OnGateButtonClicked"
                 AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Socialse"/>
-    </StackLayout>
+    </Grid>
 </ContentPage>
