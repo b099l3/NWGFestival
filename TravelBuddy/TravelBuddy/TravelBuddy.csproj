@@ -24,5 +24,14 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="GoToGate.xaml.cs">
       <DependentUpon>GoToGate.xaml</DependentUpon>
     </Compile>
+    <Compile Update="ShopsPage.xaml.cs">
+      <DependentUpon>ShopsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="BarsPage.xaml.cs">
+      <DependentUpon>BarsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ToiletsPage.xaml.cs">
+      <DependentUpon>ToiletsPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,13 +1,19 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SocialPage.xaml.cs">
     <Files>
-      <File FileName="TravelBuddy/MainPage.xaml" Line="10" Column="30" />
-      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="23" Column="2" />
-      <File FileName="TravelBuddy/SocialPage.xaml" Line="4" Column="16" />
-      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="8" Column="36" />
+      <File FileName="TravelBuddy/MainPage.xaml" Line="24" Column="53" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="11" Column="10" />
+      <File FileName="TravelBuddy/SocialPage.xaml" Line="9" Column="40" />
+      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="17" Column="59" />
       <File FileName="TravelBuddy.iOS/Main.cs" Line="17" Column="1" />
       <File FileName="TravelBuddy/GoToGate.xaml" Line="4" Column="131" />
       <File FileName="TravelBuddy.iOS/Info.plist" />
+      <File FileName="TravelBuddy/ShopsPage.xaml" Line="6" Column="1" />
+      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TravelBuddy/BarsPage.xaml" Line="6" Column="1" />
+      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TravelBuddy/ToiletsPage.xaml" Line="6" Column="1" />
+      <File FileName="TravelBuddy/ToiletsPage.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,12 +21,16 @@
           <Node name="TravelBuddy" expanded="True">
             <Node name="TravelBuddy" expanded="True">
               <Node name="App.xaml" expanded="True" />
+              <Node name="BarsPage.xaml" expanded="True" />
               <Node name="GoToGate.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="SocialPage.xaml" expanded="True" />
+              <Node name="ShopsPage.xaml" expanded="True" />
+              <Node name="SocialPage.xaml" expanded="True">
+                <Node name="SocialPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="ToiletsPage.xaml" expanded="True" />
             </Node>
             <Node name="TravelBuddy.iOS" expanded="True">
-              <Node name="Assets.xcassets" selected="True" />
               <Node name="Resources" expanded="True" />
             </Node>
           </Node>
