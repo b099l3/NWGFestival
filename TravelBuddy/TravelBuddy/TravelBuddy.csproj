@@ -9,6 +9,6 @@
     <PackageReference Include="Xam.Plugins.TextToSpeech" Version="4.0.0.7" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="ViewModel\MainPageViewModel.cs" />
+    <Compile Remove="GoToGate.cs" />
   </ItemGroup>
 </Project>
