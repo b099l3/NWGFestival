@@ -5,30 +5,26 @@
     x:Class="TravelBuddy.SocialPage">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Text="Shops"
+        <Button Text="Back"
                 Grid.Row="0"
-                TextColor="White"
-                BackgroundColor="Orange"
+                Clicked="OnBackButtonClicked"
+                AutomationProperties.Name="Back to previous menu"/>
+        <Button Text="Shops"
+                Grid.Row="1"
                 Clicked="OnShopsButtonClicked"
-                AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Near by Shops"/>
         <Button Text="Bars"
-                Grid.Row="1"
-                TextColor="White"
-                BackgroundColor="Orange"
+                Grid.Row="2"
                 Clicked="OnBarsButtonClicked"
-                AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Near by Bars"/>
         <Button Text="Toilets"
-                Grid.Row="2"
-                TextColor="White"
-                BackgroundColor="Orange"
+                Grid.Row="3"
                 Clicked="OnToiletsButtonClicked"
-                AutomationProperties.IsInAccessibleTree="true"
                 AutomationProperties.Name="Nearest Toilet"/>
     </Grid>
 </ContentPage>

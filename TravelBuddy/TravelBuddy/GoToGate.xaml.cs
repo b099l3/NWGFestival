@@ -27,7 +27,8 @@ namespace TravelBuddy
 
             await Task.Delay(2500);
 
-            CrossVibrate.Current.Vibration(TimeSpan.FromSeconds(1));
+            var v = CrossVibrate.Current;
+            v.Vibration(TimeSpan.FromSeconds(1));
 
             await CrossTextToSpeech.Current.Speak("Help has arrived.");
         }
