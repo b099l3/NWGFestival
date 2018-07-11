@@ -1,22 +1,29 @@
-﻿<Properties StartupConfiguration="{8051FE3E-23A1-4EBF-A5B8-173AFFBF9902}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/MainPage.xaml">
+﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy.iOS/Main.cs">
     <Files>
-      <File FileName="TravelBuddy/MainPage.xaml" Line="7" Column="15" />
+      <File FileName="TravelBuddy/MainPage.xaml" Line="14" Column="19" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="9" Column="10" />
+      <File FileName="TravelBuddy/SocialPage.xaml" Line="6" Column="1" />
+      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="8" Column="36" />
+      <File FileName="TravelBuddy.iOS/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TravelBuddy" expanded="True">
             <Node name="TravelBuddy" expanded="True">
-              <Node name="MainPage.xaml" selected="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="SocialPage.xaml" expanded="True" />
+            </Node>
+            <Node name="TravelBuddy.iOS" expanded="True">
+              <Node name="Main.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy FirstBuild="True" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -28,6 +35,6 @@
     <Watch file="../../../../../Zonal/BurgerApplication/Mobile/Apps/Akru/shared/Services/PrinterService.cs" line="89" offsetX="590" offsetY="1320" expression="printer.PaperSize" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.905c34b7da6c79319b39febd7f9f960148e6808e" />
   <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.Nexus_6P_API_27" FirstBuild="True" />
 </Properties>

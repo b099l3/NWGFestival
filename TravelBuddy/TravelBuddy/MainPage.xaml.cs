@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace TravelBuddy
@@ -12,6 +8,16 @@ namespace TravelBuddy
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        async void OnSocialButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new SocialPage());
+        }
+
+        async void OnGateButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new GoToGate());
         }
     }
 }

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Xam.Plugins.TextToSpeech/4.0.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -129,6 +138,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xam.Plugins.TextToSpeech": "4.0.0.7",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -140,6 +150,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Xam.Plugins.TextToSpeech/4.0.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -267,6 +286,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xam.Plugins.TextToSpeech": "4.0.0.7",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -278,6 +298,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Xam.Plugins.TextToSpeech/4.0.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -405,6 +434,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xam.Plugins.TextToSpeech": "4.0.0.7",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -416,6 +446,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Xam.Plugins.TextToSpeech/4.0.0.7": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.TextToSpeech.dll": {}
+        }
+      },
       "Xamarin.Forms/3.0.0.446417": {
         "type": "package",
         "compile": {
@@ -543,6 +582,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Xam.Plugins.TextToSpeech": "4.0.0.7",
           "Xamarin.Forms": "3.0.0.446417"
         },
         "compile": {
@@ -555,6 +595,30 @@
     }
   },
   "libraries": {
+    "Xam.Plugins.TextToSpeech/4.0.0.7": {
+      "sha512": "XFf3HBQCeFetL8cEEcKkinqZ1d2L3XYQLhj83gPTIsWVsXoOQWKOyjRs9ZmDBuwWwNvVt5wlKHY+zpWXfeJJZw==",
+      "type": "package",
+      "path": "xam.plugins.texttospeech/4.0.0.7",
+      "files": [
+        "lib/monoandroid71/Plugin.TextToSpeech.dll",
+        "lib/monoandroid71/Plugin.TextToSpeech.xml",
+        "lib/netstandard1.0/Plugin.TextToSpeech.dll",
+        "lib/netstandard1.0/Plugin.TextToSpeech.xml",
+        "lib/netstandard2.0/Plugin.TextToSpeech.dll",
+        "lib/netstandard2.0/Plugin.TextToSpeech.xml",
+        "lib/uap10.0.15063/Plugin.TextToSpeech.dll",
+        "lib/uap10.0.15063/Plugin.TextToSpeech.pri",
+        "lib/uap10.0.15063/Plugin.TextToSpeech.xml",
+        "lib/xamarinios10/Plugin.TextToSpeech.dll",
+        "lib/xamarinios10/Plugin.TextToSpeech.xml",
+        "lib/xamarinmac20/Plugin.TextToSpeech.dll",
+        "lib/xamarinmac20/Plugin.TextToSpeech.xml",
+        "lib/xamarintvos10/Plugin.TextToSpeech.dll",
+        "lib/xamarintvos10/Plugin.TextToSpeech.xml",
+        "xam.plugins.texttospeech.4.0.0.7.nupkg.sha512",
+        "xam.plugins.texttospeech.nuspec"
+      ]
+    },
     "Xamarin.Forms/3.0.0.446417": {
       "sha512": "9Q6dING0FdSiOlsWUdNUzNiZgEljZ7rez5rn3+77+h0hfaFjSyV0tZQ1y2u2pXzRqgWNjDH3rrcCSoKgkMIxzA==",
       "type": "package",
@@ -703,6 +767,7 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "TravelBuddy >= 1.0.0",
+      "Xam.Plugins.TextToSpeech >= 4.0.0.7",
       "Xamarin.Forms >= 3.0.0.446417"
     ]
   },
@@ -748,6 +813,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "3.0.0.446417"
+          },
+          "Xam.Plugins.TextToSpeech": {
+            "target": "Package",
+            "version": "4.0.0.7"
           }
         }
       }
