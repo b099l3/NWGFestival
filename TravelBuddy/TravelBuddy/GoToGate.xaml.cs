@@ -30,7 +30,11 @@ namespace TravelBuddy
             var v = CrossVibrate.Current;
             v.Vibration(TimeSpan.FromSeconds(1));
 
+            goToGateLabel.Text = "Help has arrived.";
             await CrossTextToSpeech.Current.Speak("Help has arrived.");
+
+            await Navigation.PopModalAsync();
+
         }
     }
 }

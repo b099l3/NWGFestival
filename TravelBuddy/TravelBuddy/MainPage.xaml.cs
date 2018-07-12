@@ -1,10 +1,14 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Plugin.TextToSpeech;
 using Xamarin.Forms;
 
 namespace TravelBuddy
 {
     public partial class MainPage : ContentPage
     {
+        private bool isFirstRun = true;
+
         public MainPage()
         {
             InitializeComponent();
@@ -18,6 +22,21 @@ namespace TravelBuddy
         async void OnGateButtonClicked(object sender, EventArgs args)
         {
             await Navigation.PushModalAsync(new GoToGate());
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (isFirstRun)
+            {
+                OnStart();
+            }
+        }
+
+        private async Task OnStart()
+        {
+            await CrossTextToSpeech.Current.Speak("Welcomne to Newcastle Airport, do you want to go to your gate or socialize?");
+            isFirstRun = false;
         }
     }
 }

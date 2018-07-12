@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
+using Plugin.TextToSpeech;
 using Xamarin.Forms;
 
 namespace TravelBuddy
@@ -35,6 +36,18 @@ namespace TravelBuddy
         async void OnSoloTravellersButtonClicked(object sender, EventArgs args)
         {
             await Navigation.PushModalAsync(new SoloTravellerPage());
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            OnStart();
+        }
+
+        private async Task OnStart()
+        {
+            await CrossTextToSpeech.Current.Speak("See what shops, bars and restaurants we have on offer in Newcastle Airport, or we can tell you where the nearest toilet is or find you some solo Travel Buddies.");
         }
 
     }

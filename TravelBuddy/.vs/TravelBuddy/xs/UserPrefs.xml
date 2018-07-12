@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SoloTravellerPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/GoToGate.xaml">
     <Files>
-      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="20" Column="1" />
-      <File FileName="TravelBuddy/SoloTravellersConnectPage.xaml" Line="10" Column="112" />
-      <File FileName="TravelBuddy/SoloTravellersConnectPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TravelBuddy/GoToGate.xaml" Line="4" Column="1" />
-      <File FileName="TravelBuddy/SoloTravellerPage.xaml" Line="14" Column="48" />
-      <File FileName="TravelBuddy/SocialPage.xaml" Line="32" Column="55" />
-      <File FileName="TravelBuddy/SoloTravellerPage.xaml.cs" Line="15" Column="42" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="34" Column="127" />
+      <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="35" Column="6" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml.cs" Line="30" Column="127" />
+      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="14" Column="10" />
+      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="41" Column="1" />
+      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TravelBuddy/GoToGate.xaml" Line="10" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
