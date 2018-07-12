@@ -9,6 +9,10 @@
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Source="friends.png"></Image>
         <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="There are 3 other Travel Buddies in the airport." HorizontalOptions="Center" FontSize="Large"/>
+        <Button Text="Connect"
+                Grid.Row="2"
+                Clicked="OnConnectButtonClicked"
+                AutomationProperties.Name="Connect"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

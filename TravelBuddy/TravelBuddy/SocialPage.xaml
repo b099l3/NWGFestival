@@ -9,6 +9,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button Text="Back"
                 Grid.Row="0"
@@ -26,5 +27,9 @@
                 Grid.Row="3"
                 Clicked="OnToiletsButtonClicked"
                 AutomationProperties.Name="Nearest Toilet"/>
+        <Button Text="Find Solo Travellers"
+                Grid.Row="4"
+                Clicked="OnSoloTravellersButtonClicked"
+                AutomationProperties.Name="Find Solo Travellers"/>
     </Grid>
 </ContentPage>

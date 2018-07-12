@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/TravelBuddy.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SoloTravellerPage.xaml">
     <Files>
-      <File FileName="TravelBuddy/ShopsPage.xaml" Line="33" Column="1" />
-      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="20" Column="10" />
-      <File FileName="TravelBuddy/SocialPage.xaml" Line="31" Column="1" />
-      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="28" Column="10" />
-      <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="19" Column="32" />
-      <File FileName="TravelBuddy/TravelBuddy.csproj" Line="1" Column="1" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="20" Column="1" />
+      <File FileName="TravelBuddy/SoloTravellersConnectPage.xaml" Line="10" Column="112" />
+      <File FileName="TravelBuddy/SoloTravellersConnectPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TravelBuddy/GoToGate.xaml" Line="4" Column="1" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml" Line="14" Column="48" />
+      <File FileName="TravelBuddy/SocialPage.xaml" Line="32" Column="55" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml.cs" Line="15" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -21,6 +22,6 @@
     <Watch file="../../../../../Zonal/BurgerApplication/Mobile/Apps/Akru/shared/Services/PrinterService.cs" line="89" offsetX="590" offsetY="1320" expression="printer.PaperSize" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D2C238DA-F814-415D-BD32-15B112C39A38" automaticSigning="False" />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.Nexus_6P_API_27" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.40DF4BCC-51B8-497D-B469-B5C74E0DAAAC" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.SelectDevice" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>
