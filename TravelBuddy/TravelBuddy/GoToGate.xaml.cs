@@ -24,16 +24,16 @@ namespace TravelBuddy
         private async Task OnStart()
         {
             await CrossTextToSpeech.Current.Speak("We have your current location, stay where you are and help will be with you soon.");
+            loadingView.IsVisible = true;
 
-            await Task.Delay(2500);
+            await Task.Delay(3000);
 
+            loadingView.IsVisible = false;
             var v = CrossVibrate.Current;
             v.Vibration(TimeSpan.FromSeconds(1));
 
             goToGateLabel.Text = "Help has arrived.";
             await CrossTextToSpeech.Current.Speak("Help has arrived.");
-
-            await Navigation.PopModalAsync();
 
         }
     }

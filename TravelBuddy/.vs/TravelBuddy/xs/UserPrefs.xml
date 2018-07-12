@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/BarsPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SoloTravellerPage.xaml">
     <Files>
-      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="22" Column="13" />
+      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="21" Column="32" />
+      <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="37" Column="13" />
+      <File FileName="TravelBuddy/GoToGate.xaml" Line="9" Column="38" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml" Line="10" Column="38" />
+      <File FileName="TravelBuddy/SoloTravellersConnectPage.xaml" Line="14" Column="1" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml.cs" Line="34" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

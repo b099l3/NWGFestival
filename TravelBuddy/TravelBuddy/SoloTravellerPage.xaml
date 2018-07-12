@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.SoloTravellerPage">
     <ContentPage.Content>
-        <Grid Padding="20" VerticalOptions="CenterAndExpand">
+        <Grid VerticalOptions="Fill">
             <Grid.RowDefinitions>
             <RowDefinition Height="128"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+            <StackLayout Padding="30" Grid.RowSpan="3" VerticalOptions="CenterAndExpand">
         <Image Grid.Row="0" Source="friends.png"></Image>
         <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="There are 3 other Travel Buddies in the airport." HorizontalOptions="Center" FontSize="Large"/>
         <Button Text="Connect"
                 Grid.Row="2"
                 Clicked="OnConnectButtonClicked"
                 AutomationProperties.Name="Connect"/>
+                </StackLayout>
+                        <StackLayout Grid.RowSpan="3" BackgroundColor="#000000" Opacity="0.9" x:Name="loadingView" VerticalOptions="FillAndExpand" IsVisible="false">
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <ActivityIndicator Color="#f6a623" IsRunning="true" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                    <Label Text="Sending your location..." HorizontalTextAlignment="Center" TextColor="#f6a623"/>
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

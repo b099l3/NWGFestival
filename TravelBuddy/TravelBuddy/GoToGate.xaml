@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.GoToGate">
     <ContentPage.Content>  
-        <Grid Padding="20" VerticalOptions="CenterAndExpand">
+        <Grid VerticalOptions="Fill">
             <Grid.RowDefinitions>
             <RowDefinition Height="128"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Image Grid.Row="0" Source="location.png"></Image>
-        <Label Grid.Row="1" x:Name="goToGateLabel" HorizontalTextAlignment="Center" Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" FontSize="Large"/>
+            <StackLayout Padding="30" Grid.RowSpan="2" VerticalOptions="CenterAndExpand">
+                <Image Grid.Row="0" Source="location.png"></Image>
+                <Label Grid.Row="1" x:Name="goToGateLabel" HorizontalTextAlignment="Center" Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" FontSize="Large"/>
+            </StackLayout>
+            <StackLayout Grid.RowSpan="2" BackgroundColor="#000000" Opacity="0.9" x:Name="loadingView" VerticalOptions="FillAndExpand" IsVisible="false">
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <ActivityIndicator Color="#f6a623" IsRunning="true" VerticalOptions="Center" WidthRequest="40" HeightRequest="40"/>
+                    <Label Text="Sending your location..." HorizontalTextAlignment="Center" TextColor="#f6a623"/>
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

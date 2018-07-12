@@ -20,7 +20,9 @@ namespace TravelBuddy
         {
             if (canNavigate)
             {
-                await Navigation.PushModalAsync(new SoloTravellersConnectPage());
+                loadingView.IsVisible = true;
+                await Task.Delay(3000);
+                loadingView.IsVisible = false;
             }
         }
 
