@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
+using Plugin.TextToSpeech;
 using Xamarin.Forms;
 
 namespace TravelBuddy
@@ -10,6 +11,34 @@ namespace TravelBuddy
         public BarsPage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            await OnStart();
+        }
+
+        private async Task OnStart()
+        {
+            await CrossTextToSpeech.Current.Speak("We have found 2 Bars near your location: Weatherspoons and Brewdog.");
+        }
+
+        async void OnBackButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+        async void OnWeatherClicked(object sender, EventArgs args)
+        {
+            await CrossTextToSpeech.Current.Speak("Finding route for Weatherspoons");
+            await Navigation.PushModalAsync(new WalkingNavigation1Page());
+        }
+
+        async void OnBrewdogButtonClicked(object sender, EventArgs args)
+        {
+            await CrossTextToSpeech.Current.Speak("Finding route for Brew Dog");
+            await Navigation.PushModalAsync(new WalkingNavigation1Page());
         }
     }
 }
