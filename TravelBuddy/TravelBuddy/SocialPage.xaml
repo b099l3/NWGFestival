@@ -27,7 +27,7 @@
                 Grid.Row="3"
                 Clicked="OnToiletsButtonClicked"
                 AutomationProperties.Name="Nearest Toilet"/>
-        <Button Text="Find Solo Travellers"
+        <Button Text="Find Travel Buddies"
                 Grid.Row="4"
                 FontSize="35"
                 Clicked="OnSoloTravellersButtonClicked"

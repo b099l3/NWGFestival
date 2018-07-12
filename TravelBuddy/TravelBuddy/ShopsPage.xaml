@@ -17,6 +17,7 @@
                 AutomationProperties.Name="Back to previous menu"/>
         <Button Text="WHS Smiths"
                 Grid.Row="1"
+                FontSize="45"
                 Clicked="OnWHSButtonClicked"
                 AutomationProperties.Name="Your nearest shop is WHSmiths and it is a 5 minute walk away"/>
         <Button Text="Boots"
