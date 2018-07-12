@@ -12,6 +12,7 @@ namespace TravelBuddy
         public GoToGate()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         protected override void OnAppearing()
@@ -33,7 +34,7 @@ namespace TravelBuddy
             goToGateLabel.Text = "Help has arrived.";
             await CrossTextToSpeech.Current.Speak("Help has arrived.");
 
-            await Navigation.PopModalAsync();
+            await Navigation.PopToRootAsync();
 
         }
     }

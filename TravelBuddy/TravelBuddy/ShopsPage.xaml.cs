@@ -14,6 +14,7 @@ namespace TravelBuddy
         public ShopsPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         protected override async void OnAppearing()
@@ -30,6 +31,7 @@ namespace TravelBuddy
             await CrossTextToSpeech.Current.Speak("We have found 3 shops near your location: WHSmith, Boots Pharmacy and Starbucks.");
             isFirstRun = false;
             canNavigate = true;
+            NavigationPage.SetHasBackButton(this, true);
         }
 
         async void OnWHSButtonClicked(object sender, EventArgs args)
@@ -37,7 +39,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route for WHSmith");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
 
@@ -46,7 +48,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route for Boots");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
 
@@ -55,7 +57,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route for Starbucks");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
     }

@@ -8,11 +8,11 @@ namespace TravelBuddy
 {
     public partial class WalkingNavigation1Page : ContentPage
     {
-        private bool canNavigate;
-
         public WalkingNavigation1Page()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         protected override async void OnAppearing()

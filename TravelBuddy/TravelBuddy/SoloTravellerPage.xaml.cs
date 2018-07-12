@@ -14,13 +14,14 @@ namespace TravelBuddy
         public SoloTravellerPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         async void OnConnectButtonClicked(object sender, EventArgs args)
         {
             if (canNavigate)
             {
-                await Navigation.PushModalAsync(new SoloTravellersConnectPage());
+                await Navigation.PushAsync(new SoloTravellersConnectPage());
             }
         }
 
@@ -39,6 +40,7 @@ namespace TravelBuddy
             await CrossTextToSpeech.Current.Speak("There are 3 other Travel Buddies in the airport that you could connect with.");
             canNavigate = true;
             isFirstRun = false;
+            NavigationPage.SetHasBackButton(this, true);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace TravelBuddy
         public BarsPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         protected override async void OnAppearing()
@@ -29,6 +30,7 @@ namespace TravelBuddy
         {
             await CrossTextToSpeech.Current.Speak("We have found 2 Bars near your location: Weatherspoons and Brewdog.");
             canNavigate = true;
+            NavigationPage.SetHasBackButton(this, true);
             isFirstRun = false;
         }
 
@@ -37,7 +39,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route for Weatherspoons");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
 
@@ -46,7 +48,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route for Brew Dog");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
     }
