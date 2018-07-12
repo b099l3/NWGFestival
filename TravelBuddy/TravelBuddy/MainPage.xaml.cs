@@ -13,13 +13,14 @@ namespace TravelBuddy
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         async void OnSocialButtonClicked(object sender, EventArgs args)
         {
             if (canNavigate)
             {
-                await Navigation.PushModalAsync(new SocialPage());
+                await Navigation.PushAsync(new SocialPage());
             }
         }
 
@@ -45,6 +46,7 @@ namespace TravelBuddy
             await CrossTextToSpeech.Current.Speak("Welcomne to Newcastle Airport, do you want to go to your gate or socialize?");
             isFirstRun = false;
             canNavigate = true;
+            NavigationPage.SetHasBackButton(this, true);
         }
     }
 }

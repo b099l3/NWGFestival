@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Plugin.TextToSpeech;
@@ -23,6 +23,7 @@ namespace TravelBuddy
                 loadingView.IsVisible = true;
                 await Task.Delay(3000);
                 loadingView.IsVisible = false;
+                Navigation.PopModalAsync();
             }
         }
 

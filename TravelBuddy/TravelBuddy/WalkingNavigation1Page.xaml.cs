@@ -8,11 +8,11 @@ namespace TravelBuddy
 {
     public partial class WalkingNavigation1Page : ContentPage
     {
-        private bool canNavigate;
-
         public WalkingNavigation1Page()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         protected override async void OnAppearing()
@@ -26,15 +26,7 @@ namespace TravelBuddy
             await WalkingDirections(3);
             await CrossTextToSpeech.Current.Speak("You have arrived!");
             WalkingLabel.Text = "You have arrived!";
-            canNavigate = true;
-        }
-
-        async void OnBackButtonClicked(object sender, EventArgs args)
-        {
-            if (canNavigate)
-            {
-                await Navigation.PopModalAsync();
-            }
+            await Navigation.PopToRootAsync();
         }
 
         static Random rnd = new Random();

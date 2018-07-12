@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
+    Title="Socalise"
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="TravelBuddy.SocialPage">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Text="Back"
-                Grid.Row="0"
-                Clicked="OnBackButtonClicked"
-                AutomationProperties.Name="Back to previous menu"/>
         <Button Text="Shops"
-                Grid.Row="1"
+                Grid.Row="0"
                 Clicked="OnShopsButtonClicked"
                 AutomationProperties.Name="Near by Shops"/>
         <Button Text="Bars"
-                Grid.Row="2"
+                Grid.Row="1"
                 Clicked="OnBarsButtonClicked"
                 AutomationProperties.Name="Near by Bars"/>
         <Button Text="Toilets"
-                Grid.Row="3"
+                Grid.Row="2"
                 Clicked="OnToiletsButtonClicked"
                 AutomationProperties.Name="Nearest Toilet"/>
         <Button Text="Find Travel Buddies"
-                Grid.Row="4"
+                Grid.Row="3"
                 FontSize="35"
                 Clicked="OnSoloTravellersButtonClicked"
                 AutomationProperties.Name="Find Solo Travellers"/>

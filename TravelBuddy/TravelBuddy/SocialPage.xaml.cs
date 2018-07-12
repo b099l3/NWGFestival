@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Plugin.TextToSpeech;
@@ -14,13 +14,14 @@ namespace TravelBuddy
         public SocialPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         async void OnShopsButtonClicked(object sender, EventArgs args)
         {
             if (canNavigate)
             {
-                await Navigation.PushModalAsync(new ShopsPage());
+                await Navigation.PushAsync(new ShopsPage());
             }
         }
 
@@ -28,7 +29,7 @@ namespace TravelBuddy
         {
             if (canNavigate)
             {
-                await Navigation.PushModalAsync(new BarsPage());
+                await Navigation.PushAsync(new BarsPage());
             }
         }
 
@@ -37,15 +38,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 await CrossTextToSpeech.Current.Speak("Finding route to nearest toilet");
-                await Navigation.PushModalAsync(new WalkingNavigation1Page());
-            }
-        }
-
-        async void OnBackButtonClicked(object sender, EventArgs args)
-        {
-            if (canNavigate)
-            {
-                await Navigation.PopModalAsync();
+                await Navigation.PushAsync(new WalkingNavigation1Page());
             }
         }
 
@@ -72,6 +65,7 @@ namespace TravelBuddy
             await CrossTextToSpeech.Current.Speak("See what shops, bars and restaurants we have on offer in Newcastle Airport, or we can tell you where the nearest toilet is or find you some solo Travel Buddies.");
             isFirstRun = false;
             canNavigate = true;
+            NavigationPage.SetHasBackButton(this, true);
         }
 
     }
