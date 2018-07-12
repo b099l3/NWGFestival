@@ -15,7 +15,7 @@
                 Grid.Row="0"
                 Clicked="OnBackButtonClicked"
                 AutomationProperties.Name="Back to previous menu"/>
-        <Button Text="WHS Smiths"
+        <Button Text="WHS Smith"
                 Grid.Row="1"
                 FontSize="45"
                 Clicked="OnWHSButtonClicked"

@@ -37,7 +37,7 @@ namespace TravelBuddy
 
         async void OnWHSButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route for WHSmiths");
+            await CrossTextToSpeech.Current.Speak("Finding route for WHSmith");
             await Navigation.PushModalAsync(new WalkingNavigation1Page());
         }
 
