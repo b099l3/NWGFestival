@@ -8,6 +8,9 @@ namespace TravelBuddy
 {
     public partial class SoloTravellerPage : ContentPage
     {
+        private bool canNavigate;
+        private bool isFirstRun = true;
+
         public SoloTravellerPage()
         {
             InitializeComponent();
@@ -15,19 +18,27 @@ namespace TravelBuddy
 
         async void OnConnectButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new SoloTravellersConnectPage());
+            if (canNavigate)
+            {
+                await Navigation.PushModalAsync(new SoloTravellersConnectPage());
+            }
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            OnStart();
+            if (isFirstRun)
+            {
+                OnStart();
+            }
         }
 
         private async Task OnStart()
         {
             await CrossTextToSpeech.Current.Speak("There are 3 other Travel Buddies in the airport that you could connect with.");
+            canNavigate = true;
+            isFirstRun = false;
         }
     }
 }

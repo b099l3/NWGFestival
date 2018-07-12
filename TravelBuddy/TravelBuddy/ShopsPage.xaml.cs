@@ -8,6 +8,9 @@ namespace TravelBuddy
 {
     public partial class ShopsPage : ContentPage
     {
+        private bool isFirstRun = true;
+        private bool canNavigate;
+
         public ShopsPage()
         {
             InitializeComponent();
@@ -16,30 +19,44 @@ namespace TravelBuddy
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            await OnStart();
+            if (isFirstRun)
+            {
+                await OnStart();
+            }
         }
 
         private async Task OnStart()
         {
             await CrossTextToSpeech.Current.Speak("We have found 3 shops near your location: WHSmith, Boots Pharmacy and Starbucks.");
+            isFirstRun = false;
+            canNavigate = true;
         }
 
         async void OnWHSButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route for WHSmiths");
-            await Navigation.PushAsync(new WalkingNavigation1Page());
+            if (canNavigate)
+            {
+                await CrossTextToSpeech.Current.Speak("Finding route for WHSmith");
+                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            }
         }
 
         async void OnBootsButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route for Boots");
-            await Navigation.PushAsync(new WalkingNavigation1Page());
+            if (canNavigate)
+            {
+                await CrossTextToSpeech.Current.Speak("Finding route for Boots");
+                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            }
         }
 
         async void OnStarbucksButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route for Starbucks");
-            await Navigation.PushAsync(new WalkingNavigation1Page());
+            if (canNavigate)
+            {
+                await CrossTextToSpeech.Current.Speak("Finding route for Starbucks");
+                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            }
         }
     }
 }
