@@ -21,6 +21,7 @@ namespace TravelBuddy
             if (canNavigate)
             {
                 loadingView.IsVisible = true;
+                await CrossTextToSpeech.Current.Speak("Sending your locations to your Travel Buddies.");
                 await Task.Delay(3000);
                 loadingView.IsVisible = false;
                 Navigation.PopModalAsync();
