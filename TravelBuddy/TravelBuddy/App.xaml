@@ -6,7 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style TargetType="Button">
-                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="FontSize" Value="72" />
                 <Setter Property="BackgroundColor" Value="Orange" />
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="TextColor" Value="White" />

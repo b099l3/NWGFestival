@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TravelBuddy.WalkingNavigation1Page">
+    <ContentPage.Content>
+        <Grid Padding="20" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="128"/>
+        </Grid.RowDefinitions>
+        <Button Text="Back"
+                Grid.Row="2"
+                Clicked="OnBackButtonClicked"
+                AutomationProperties.Name="Back to previous menu"/>
+        <Label x:Name="WalkingLabel" FontAttributes="Bold" Text="" Grid.Row="0" FontSize="72" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

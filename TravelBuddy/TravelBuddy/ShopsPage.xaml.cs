@@ -31,17 +31,20 @@ namespace TravelBuddy
 
         async void OnWHSButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            await CrossTextToSpeech.Current.Speak("Finding route for WHSmiths");
+            await Navigation.PushModalAsync(new WalkingNavigation1Page());
         }
 
         async void OnBootsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            await CrossTextToSpeech.Current.Speak("Finding route for Boots");
+            await Navigation.PushModalAsync(new WalkingNavigation1Page());
         }
 
         async void OnStarbucksButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            await CrossTextToSpeech.Current.Speak("Finding route for Starbucks");
+            await Navigation.PushModalAsync(new WalkingNavigation1Page());
         }
     }
 }
