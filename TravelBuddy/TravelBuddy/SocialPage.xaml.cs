@@ -9,6 +9,7 @@ namespace TravelBuddy
     public partial class SocialPage : ContentPage
     {
         private bool isFirstRun = true;
+        private bool canNavigate;
 
         public SocialPage()
         {
@@ -17,28 +18,43 @@ namespace TravelBuddy
 
         async void OnShopsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new ShopsPage());
+            if (canNavigate)
+            {
+                await Navigation.PushModalAsync(new ShopsPage());
+            }
         }
 
         async void OnBarsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new BarsPage());
+            if (canNavigate)
+            {
+                await Navigation.PushModalAsync(new BarsPage());
+            }
         }
 
         async void OnToiletsButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route to nearest toilet");
-            await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            if (canNavigate)
+            {
+                await CrossTextToSpeech.Current.Speak("Finding route to nearest toilet");
+                await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            }
         }
 
         async void OnBackButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            if (canNavigate)
+            {
+                await Navigation.PopModalAsync();
+            }
         }
 
         async void OnSoloTravellersButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SoloTravellerPage());
+            if (canNavigate)
+            {
+                await Navigation.PushModalAsync(new SoloTravellerPage());
+            }
         }
 
         protected override void OnAppearing()
@@ -55,6 +71,7 @@ namespace TravelBuddy
         {
             await CrossTextToSpeech.Current.Speak("See what shops, bars and restaurants we have on offer in Newcastle Airport, or we can tell you where the nearest toilet is or find you some solo Travel Buddies.");
             isFirstRun = false;
+            canNavigate = true;
         }
 
     }

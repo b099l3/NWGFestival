@@ -8,6 +8,8 @@ namespace TravelBuddy
 {
     public partial class WalkingNavigation1Page : ContentPage
     {
+        private bool canNavigate;
+
         public WalkingNavigation1Page()
         {
             InitializeComponent();
@@ -24,11 +26,15 @@ namespace TravelBuddy
             await WalkingDirections(3);
             await CrossTextToSpeech.Current.Speak("You have arrived!");
             WalkingLabel.Text = "You have arrived!";
+            canNavigate = true;
         }
 
         async void OnBackButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            if (canNavigate)
+            {
+                await Navigation.PopModalAsync();
+            }
         }
 
         static Random rnd = new Random();
