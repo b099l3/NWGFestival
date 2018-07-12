@@ -152,5 +152,6 @@
     <BundleResource Include="Resources\friends.png" />
     <BundleResource Include="Resources\friendsx2.png" />
     <BundleResource Include="Resources\friendsx3.png" />
+    <BundleResource Include="Resources\Icon60.png" />
   </ItemGroup>
 </Project>
