@@ -8,6 +8,8 @@ namespace TravelBuddy
 {
     public partial class ShopsPage : ContentPage
     {
+        private bool isFirstRun = true;
+
         public ShopsPage()
         {
             InitializeComponent();
@@ -16,12 +18,16 @@ namespace TravelBuddy
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            await OnStart();
+            if (isFirstRun)
+            {
+                await OnStart();
+            }
         }
 
         private async Task OnStart()
         {
             await CrossTextToSpeech.Current.Speak("We have found 3 shops near your location: WHSmith, Boots Pharmacy and Starbucks.");
+            isFirstRun = false;
         }
 
         async void OnBackButtonClicked(object sender, EventArgs args)

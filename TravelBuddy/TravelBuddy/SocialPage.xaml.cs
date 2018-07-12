@@ -8,6 +8,8 @@ namespace TravelBuddy
 {
     public partial class SocialPage : ContentPage
     {
+        private bool isFirstRun = true;
+
         public SocialPage()
         {
             InitializeComponent();
@@ -43,12 +45,16 @@ namespace TravelBuddy
         {
             base.OnAppearing();
 
-            OnStart();
+            if (isFirstRun)
+            {
+                OnStart();
+            }
         }
 
         private async Task OnStart()
         {
             await CrossTextToSpeech.Current.Speak("See what shops, bars and restaurants we have on offer in Newcastle Airport, or we can tell you where the nearest toilet is or find you some solo Travel Buddies.");
+            isFirstRun = false;
         }
 
     }

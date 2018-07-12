@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{5DA29EFC-5928-4960-A469-C876DF99BF16}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/ShopsPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBuddy/SocialPage.xaml.cs">
     <Files>
-      <File FileName="TravelBuddy/BarsPage.xaml" Line="25" Column="94" />
-      <File FileName="TravelBuddy/BarsPage.xaml.cs" Line="17" Column="10" />
-      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="45" Column="10" />
-      <File FileName="TravelBuddy/SocialPage.xaml" Line="37" Column="1" />
-      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="28" Column="10" />
+      <File FileName="TravelBuddy/MainPage.xaml.cs" Line="10" Column="9" />
+      <File FileName="TravelBuddy/GoToGate.xaml.cs" Line="36" Column="46" />
+      <File FileName="TravelBuddy/SoloTravellerPage.xaml.cs" Line="30" Column="127" />
+      <File FileName="TravelBuddy/ShopsPage.xaml.cs" Line="30" Column="32" />
+      <File FileName="TravelBuddy/SocialPage.xaml.cs" Line="12" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -20,6 +20,6 @@
     <Watch file="../../../../../Zonal/BurgerApplication/Mobile/Apps/Akru/shared/Services/PrinterService.cs" line="89" offsetX="590" offsetY="1320" expression="printer.PaperSize" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.905c34b7da6c79319b39febd7f9f960148e6808e" automaticSigning="False" />
-  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.Nexus_6P_API_27" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.40DF4BCC-51B8-497D-B469-B5C74E0DAAAC" />
+  <MonoDevelop.Ide.ItemProperties.TravelBuddy.Android PreferredExecutionTarget="Android.SelectDevice" FirstBuild="True" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>
