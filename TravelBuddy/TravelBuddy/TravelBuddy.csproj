@@ -12,6 +12,7 @@
   <ItemGroup>
     <Compile Remove="GoToGate.cs" />
     <Compile Remove="WalkingPage.cs" />
+    <Compile Remove="SocialPage.xaml_BASE_27387.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
@@ -41,5 +42,10 @@
     <Compile Update="WalkingNavigation1Page.xaml.cs">
       <DependentUpon>WalkingNavigation1Page.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="SocialPage.xaml.cs.orig">
+      <DependentUpon>SocialPage.xaml.cs</DependentUpon>
+    </None>
   </ItemGroup>
 </Project>
