@@ -4,13 +4,8 @@
         <Grid Padding="20" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="128"/>
         </Grid.RowDefinitions>
-        <Button Text="Back"
-                Grid.Row="2"
-                Clicked="OnBackButtonClicked"
-                AutomationProperties.Name="Back to previous menu"/>
-        <Label x:Name="WalkingLabel" FontAttributes="Bold" Text="" Grid.Row="0" FontSize="72" />
+        <Label x:Name="WalkingLabel" FontAttributes="Bold" Text="" Grid.Row="0" FontSize="80" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

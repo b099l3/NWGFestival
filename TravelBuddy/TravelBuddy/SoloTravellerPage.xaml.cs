@@ -15,7 +15,7 @@ namespace TravelBuddy
 
         async void OnConnectButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SoloTravellersConnectPage());
+            await Navigation.PushAsync(new SoloTravellersConnectPage());
         }
 
         protected override void OnAppearing()

@@ -16,12 +16,12 @@ namespace TravelBuddy
 
         async void OnSocialButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SocialPage());
+            await Navigation.PushAsync(new SocialPage());
         }
 
         async void OnGateButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new GoToGate());
+            await Navigation.PushAsync(new GoToGate());
         }
 
         protected override void OnAppearing()

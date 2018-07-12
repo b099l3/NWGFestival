@@ -24,11 +24,7 @@ namespace TravelBuddy
             await WalkingDirections(3);
             await CrossTextToSpeech.Current.Speak("You have arrived!");
             WalkingLabel.Text = "You have arrived!";
-        }
-
-        async void OnBackButtonClicked(object sender, EventArgs args)
-        {
-            await Navigation.PopModalAsync();
+            await Navigation.PopToRootAsync();
         }
 
         static Random rnd = new Random();

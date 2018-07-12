@@ -6,26 +6,21 @@
     <ContentPage.Content>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Text="Back"
-                Grid.Row="0"
-                Clicked="OnBackButtonClicked"
-                AutomationProperties.Name="Back to previous menu"/>
         <Button Text="WHS Smiths"
-                Grid.Row="1"
+                Grid.Row="0"
                 FontSize="45"
                 Clicked="OnWHSButtonClicked"
                 AutomationProperties.Name="Your nearest shop is WHSmiths and it is a 5 minute walk away"/>
         <Button Text="Boots"
-                Grid.Row="2"
+                Grid.Row="1"
                 Clicked="OnBootsButtonClicked"
                 AutomationProperties.Name="Boots Pharmacy is a 15 minute walk from your location"/>
         <Button Text="Starbucks"
-                Grid.Row="3"
+                Grid.Row="2"
                 Clicked="OnStarbucksButtonClicked"
                 AutomationProperties.Name="Starbucks is also just a 15 minute walk away."/>
     </Grid>

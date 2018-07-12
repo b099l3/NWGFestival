@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Plugin.TextToSpeech;
@@ -15,28 +15,23 @@ namespace TravelBuddy
 
         async void OnShopsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new ShopsPage());
+            await Navigation.PushAsync(new ShopsPage());
         }
 
         async void OnBarsButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new BarsPage());
+            await Navigation.PushAsync(new BarsPage());
         }
 
         async void OnToiletsButtonClicked(object sender, EventArgs args)
         {
             await CrossTextToSpeech.Current.Speak("Finding route to nearest toilet");
-            await Navigation.PushModalAsync(new WalkingNavigation1Page());
-        }
-
-        async void OnBackButtonClicked(object sender, EventArgs args)
-        {
-            await Navigation.PopModalAsync();
+            await Navigation.PushAsync(new WalkingNavigation1Page());
         }
 
         async void OnSoloTravellersButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SoloTravellerPage());
+            await Navigation.PushAsync(new SoloTravellerPage());
         }
 
         protected override void OnAppearing()
