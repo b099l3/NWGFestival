@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Plugin.TextToSpeech;
@@ -25,8 +25,7 @@ namespace TravelBuddy
 
         async void OnToiletsButtonClicked(object sender, EventArgs args)
         {
-            await CrossTextToSpeech.Current.Speak("Finding route to nearest toilet");
-            await Navigation.PushModalAsync(new WalkingNavigation1Page());
+            await Navigation.PushModalAsync(new ToiletsPage());
         }
 
         async void OnBackButtonClicked(object sender, EventArgs args)

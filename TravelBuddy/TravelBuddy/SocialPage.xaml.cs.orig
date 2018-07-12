@@ -1,6 +1,9 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Threading.Tasks;
+=======
+>>>>>>> 5459de828c1f886bac3445f22a31ed5e1d3b177b
 using Plugin.TextToSpeech;
 using Xamarin.Forms;
 

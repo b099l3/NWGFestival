@@ -7,7 +7,7 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Source="location.png"></Image>
-        <Label Grid.Row="1" HorizontalTextAlignment="Center" Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" FontSize="Large"/>
+        <Label Grid.Row="1" x:Name="goToGateLabel" HorizontalTextAlignment="Center" Text="We have your current location, stay where you are and help will be with you soon." HorizontalOptions="Center" FontSize="Large"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
